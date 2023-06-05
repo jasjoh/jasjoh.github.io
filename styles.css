@@ -1,0 +1,24 @@
+#html {
+    scroll-behavior: smooth;
+}
+
+#top {    
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-color: #0a1409;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#middle {
+    height: 100vh;
+}
+
+.my-shadow {
+    text-shadow: 1px 1px 4px black;
+}
+
+.my-center {
+    height: 100%;
+}

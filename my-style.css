@@ -1,0 +1,42 @@
+.my-section_row {
+    height: 100vh;  /* make each section the entire viewport height */
+}
+
+.my-vert_spacer_row {
+    height: 168px /* the height of the nav when expanded */
+}
+
+.my-main_content_row {
+    height: calc(100vh - 168px); /* set height accounting for spacer row / nav bar */
+}
+
+#top {    
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position:center center;
+    overflow: hidden;
+}
+
+/* -- This adds shadows for font that needs contrast with background -- */
+.my-shadow {
+    text-shadow: 1px 1px 4px black;
+}
+
+/* -- This makes the display-1-class font scale with the viewport size -- */
+h1.display-1 {
+    font-size: 8vw;
+}
+
+/* -- This makes the lead-class font scale with the viewport size -- */
+h1.lead {
+    font-size: 2vw;
+}
+
+body {    
+    background-color: #0a1409;
+}
+
+profile_photo {
+    height: 20vh;
+    width: 20vh;
+}
