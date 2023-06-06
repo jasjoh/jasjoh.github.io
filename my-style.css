@@ -1,5 +1,5 @@
 .my-section_row {
-    height: 100vh;  /* make each section the entire viewport height */
+    min-height: 100vh;  /* make each section the entire viewport height */
 }
 
 .my-vert_spacer_row {
@@ -7,11 +7,22 @@
 }
 
 .my-main_content_row {
-    height: calc(100vh - 168px); /* set height accounting for spacer row / nav bar */
+    min-height: calc(100vh - 168px); /* set height accounting for spacer row / nav bar */
+}
+
+.my-job_titles:last-of-type {
+    min-height: 25vh;
 }
 
 #top {    
     background-image: url(background.jpg);
+    background-size: cover;
+    background-position:center center;
+    overflow: hidden;
+}
+
+#contact {    
+    background-image: url(contact.jpg);
     background-size: cover;
     background-position:center center;
     overflow: hidden;
@@ -28,8 +39,16 @@ h1.display-1 {
 }
 
 /* -- This makes the lead-class font scale with the viewport size -- */
-h1.lead {
+.my-lead_three h1 {
+    font-size: 3vw;
+}
+
+.my-lead_two h1 {
     font-size: 2vw;
+}
+
+.my-lead_one h1 {
+    font-size: 1vw;
 }
 
 body {    

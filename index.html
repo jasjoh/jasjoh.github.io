@@ -15,12 +15,13 @@
   </head>
 <body>  
   <div class="container-fluid"> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <!--<span class="navbar-brand mb-0 h1">Navbar</span>-->
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top"> <!-- removed: ' navbar-expand-lg  '-->
+      <!-- add this back if you want a branded icon ' <span class="navbar-brand mb-0 h1">Navbar</span> '' -->
+      <!-- cool feature but not needed for so few nav links
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button> -->
+      <div id="navbarSupportedContent"> <!-- removed: ' class="collapse navbar-collapse" ' -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link scroll" href="#top">Home <span class="sr-only">(current)</span></a>
@@ -30,6 +31,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link scroll" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -42,8 +46,11 @@
             <div class="row">
               <h1 class="col display-1 text-center text-white my-shadow font-weight-bold">Jason Johnson</h1>
             </div>
-            <div class="row">
-              <h1 class="col lead text-center text-white my-shadow">Program Manager | Product Manager | Software Engineer</h1>
+            <div class="row my-job_titles my-lead_three ">
+              <h1 class="col d-flex flex-column justify-content-end lead text-center text-white my-shadow">Software Engineer</h1>
+            </div>
+            <div class="row my-job_titles my-job_titles_secondary my-lead_two">
+              <h1 class="col d-flex flex-column justify-content-start lead text-center text-white my-shadow">Program Manager | Product Manager</h1>
             </div>
           </div>
         </div>
@@ -66,7 +73,7 @@
               </div>
               <div class="col-md-6 d-flex justify-content-center">
                 <p class="lead">
-                  I'm Jason! I based in the SF bay area (About 30 minutes north in a town called Novato) where I live with my partner and our
+                  I'm Jason! I'm based in the SF bay area (About 30 minutes north in a town called Novato) where I live with my partner and our
                   two chocolate labs. I've spent my entire career in the tech industry, starting out in quality assurance, then transitioning into
                   and bouncing between program / project / product management. I've been pulled towards software engineering a couple times (including
                   when I first pursued my undergraduate degree) and have wrote some code along the way, but ultimately chose to switch to that career
@@ -91,7 +98,7 @@
             </div>
             <div class="row">
                <div class="col d-flex justify-content-end pr-1">
-                <p><a href="https://www.linkedin.com/in/jason-johnson-006424/">Linked-In</a></p>
+                <p><a href="https://www.linkedin.com/in/jason-johnson-006424/" target="_blank">Linked-In</a></p>
                </div>
                <div class="col-1 d-flex justify-content-center">
                 <h6>|</h6>
@@ -328,7 +335,46 @@
           </div>
         </div>    
       </div>
+    </div>      <!--   
+    <div class="row my-section_row" id="contact">
+      <div class="col my-section_column">        
+        <div class="row my-vert_spacer_row"></div>        
+        <div class="row my-main_content_row">
+          <div class="col my-main_content_col">
+            <div class="row pb-3">
+              <div class="col d-flex justify-content-center">
+                <h2 class="display-5 font-weight-bold text-white my-shadow text-center">Contact</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-md-6 d-flex justify-content-center">
+                <p class="lead text-white my-shadow ">
+                  jasjohat@gmail.com
+                </p>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>    
+      </div>
     </div>
+  -->
+    <div class="row my-section_row" id="contact">
+      <div class="col my-section_column">        
+        <div class="row my-vert_spacer_row"></div>        
+        <div class="row my-main_content_row">
+          <div class="col d-flex flex-column justify-content-center my-main_content_col">
+            <div class="row my-job_titles my-lead_three">
+              <h1 class="col d-flex flex-column justify-content-end lead text-center text-white my-shadow font-weight-bold">Contact</h1>
+            </div>
+            <div class="row my-job_titles my-job_titles_secondary my-lead_two">
+              <h1 class="col d-flex flex-column justify-content-start lead my-lead_one text-center text-white my-shadow">jasjohat@gmail.com</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
 </body>
 </html>
