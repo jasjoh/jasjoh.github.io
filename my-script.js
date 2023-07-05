@@ -12,9 +12,10 @@ $(document).ready( // this is how we ensure jQuery waits for the doc to fully lo
       function(element){
         element.preventDefault();
         // determine the distance (in pixels) from the top of the page to the section we're navigating to
+        // uses jQuery actions to find the element the HREF is pointing to and finding it's offset from the top
         let distanceToHtmlDest = $('body').find($(this).attr('href')).offset().top;
-        // using jQuery's animate action to scroll the page by changing the value of the body's scrollTop over 800ms
-        $('html, body').animate({ scrollTop : distanceToHtmlDest },800);
+        // using jQuery's animate action to scroll the page by changing the value of page's scrollTop over 800ms
+        $('html').animate({ scrollTop : distanceToHtmlDest },800);
         // set the clicked element's item as active (so bootstrap updates style)
         $(this).parent().addClass('active');
         // set sibling items as inactive (so bootstrap updates style)
